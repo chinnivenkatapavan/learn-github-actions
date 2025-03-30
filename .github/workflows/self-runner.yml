@@ -1,0 +1,7 @@
+name: Self Runner
+on: [push]
+jobs:
+  stage1:
+    runs-on: self-hosted
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
